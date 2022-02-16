@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<script src="js/loopDemo.js"></script>
+	<script src="js/sayHi.js"></script>
+	<body>
+		<!-- 
+			打印100句：<h1>好好学习,天天向上。</h1>
+			
+		 -->
+		<button onclick="pri()">打印100遍</button>
+		<button onclick="getSum()">统计1-100的累加和</button>
+		<button onclick="getEven()">统计1-100的偶数和</button>
+		<button onclick="changeVal()"> 交换两个值 </button>
+		
+		<hr />
+		<!-- 省市级联 -->
+		<!-- this等价于document.getElementById("pro") -->
+		<select id="pro" onchange="loadCity(this)">
+			<option value="-1">请选择</option>
+		</select>省
+		<select id="city">
+			<option>请选择</option>
+		</select>市
+	</body>
+</html>
